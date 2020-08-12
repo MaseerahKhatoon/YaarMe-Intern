@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*height:100%;*/
+  background-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #ddd;
+  padding: 20px 0 20px 0;
+
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 40%;
+  padding: 12px;
+  float: center;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+  padding:10px;
+  
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+  padding:10px;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+  padding: 10px;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.log{
+	margin: auto;
+	padding: 20px;
+}
+
+.social {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  padding: 40px;
+  margin-top: 6px;
+}
+
+.row{
+	float: center;
+}	
+
+.or-text {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  width: 50%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide*/
+@media screen and (max-width: 650px) {
+  .social {
+    width: 100%;
+    margin-top: 0;
+	padding: 20px;
+  }
+  /* hide the vertical line */
+  .or-text {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+	font-weight: bold;
+  }
+  
+  .bottom-container{
+	  width: 70%;
+}
